@@ -18,7 +18,7 @@ Fichier : [`main.cpp`](main.cpp)
 #include <cstdio>
 
 int main() {
-    double pipeline = 8.0; // capteurs, transmission, composition, affichage (ms)
+    double pipeline = 8.0; // pour capteurs, transmission, composition et affichage
     double freq[3] = {72, 90, 120};
 
     printf("frequence | duree image | reste pour le code\n");
