@@ -87,11 +87,12 @@ int main() {
             prets.insert(paire.first);
         }
     }
-    std::vector<std::string> ordre;
+    std::size_t sortis = 0;
     while (!prets.empty()) {
         std::string courant = *prets.begin();
         prets.erase(prets.begin());
-        ordre.push_back(courant);
+        std::cout << courant << '\n';
+        sortis++;
         auto it = besoins.find(courant);
         if (it == besoins.end()) {
             continue;
@@ -104,12 +105,8 @@ int main() {
         }
     }
 
-    if (ordre.size() != liste.size()) {
+    if (sortis != liste.size()) {
         std::cout << "CYCLE\n";
-        return 0;
-    }
-    for (const auto& module : ordre) {
-        std::cout << module << '\n';
     }
     return 0;
 }
