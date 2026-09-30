@@ -1,6 +1,7 @@
 #include <iostream>
-#include <map>
+#include <set>
 #include <string>
+#include <utility>
 
 static bool LireLigne(std::string& ligne) {
     while (std::getline(std::cin, ligne)) {
@@ -23,7 +24,9 @@ static std::string Nettoyer(const std::string& s) {
     return s.substr(debut, fin - debut + 1);
 }
 
-static bool EvaluerTerme(std::string terme, const std::map<std::string, std::string>& machine) {
+using Machine = std::set<std::pair<std::string, std::string>>;
+
+static bool EvaluerTerme(std::string terme, const Machine& machine) {
     bool inverse = false;
     terme = Nettoyer(terme);
     while (!terme.empty() && terme[0] == '!') {
@@ -35,26 +38,28 @@ static bool EvaluerTerme(std::string terme, const std::map<std::string, std::str
     if (egal != std::string::npos) {
         std::string cle = Nettoyer(terme.substr(0, egal));
         std::string valeur = Nettoyer(terme.substr(egal + 1));
-        auto it = machine.find(cle);
-        vrai = it != machine.end() && it->second == valeur;
+        vrai = machine.count({cle, valeur}) > 0;
     }
     return inverse ? !vrai : vrai;
 }
 
 int main() {
     std::string ligne;
-    std::map<std::string, std::string> machine;
+    Machine machine;
 
     int v = 0;
     if (LireLigne(ligne)) {
         v = std::stoi(ligne);
     }
-    for (int i = 0; i < v && LireLigne(ligne); ++i) {
+    for (int i = 0; i < v; ++i) {
+        if (!LireLigne(ligne)) {
+            break;
+        }
         std::size_t egal = ligne.find('=');
         if (egal == std::string::npos) {
             continue;
         }
-        machine[Nettoyer(ligne.substr(0, egal))] = Nettoyer(ligne.substr(egal + 1));
+        machine.insert({Nettoyer(ligne.substr(0, egal)), Nettoyer(ligne.substr(egal + 1))});
     }
 
     int f = 0;
