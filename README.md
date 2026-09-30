@@ -20,6 +20,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | Exercice | Dossier |
 |---|---|
 | exo1 | [`chapitre-02/exo1-votre_premier_fichier_de_projet`](chapitre-02/exo1-votre_premier_fichier_de_projet) |
+| exo19 | [`chapitre-02/exo19-faire_planter_et_retrouver_pourquoi`](chapitre-02/exo19-faire_planter_et_retrouver_pourquoi) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.

@@ -1,0 +1,25 @@
+--------- beginning of crash
+09-30 19:10:14.383  1594  1639 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 1639 (ani5089.masalle), pid 1594 (ani5089.masalle)
+09-30 19:10:16.556  1646  1646 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-30 19:10:16.556  1646  1646 F DEBUG   : Native Crash TIME: 62644187
+09-30 19:10:16.556  1646  1646 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-30 19:10:16.556  1646  1646 F DEBUG   : Build fingerprint: 'TECNO/BF6-OP/TECNO-BF6:12/SP1A.210812.001/240708V838:user/release-keys'
+09-30 19:10:16.556  1646  1646 F DEBUG   : Revision: '0'
+09-30 19:10:16.556  1646  1646 F DEBUG   : ABI: 'arm'
+09-30 19:10:16.556  1646  1646 F DEBUG   : Timestamp: 2026-09-30 19:10:14.544885273+0100
+09-30 19:10:16.556  1646  1646 F DEBUG   : Process uptime: 0s
+09-30 19:10:16.556  1646  1646 F DEBUG   : Cmdline: com.ani5089.masalle
+09-30 19:10:16.556  1646  1646 F DEBUG   : pid: 1594, tid: 1639, name: ani5089.masalle  >>> com.ani5089.masalle <<<
+09-30 19:10:16.556  1646  1646 F DEBUG   : uid: 10065
+09-30 19:10:16.556  1646  1646 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-30 19:10:16.556  1646  1646 F DEBUG   : Cause: null pointer dereference
+09-30 19:10:16.556  1646  1646 F DEBUG   :     r0  00000000  r1  dc01a944  r2  dc01a944  r3  bf845b50
+09-30 19:10:16.556  1646  1646 F DEBUG   :     r4  bf8471c0  r5  bf8471c0  r6  bf8471c0  r7  00000078
+09-30 19:10:16.557  1646  1646 F DEBUG   :     r8  0000063a  r9  e82672cc  r10 ffe97428  r11 bf847180
+09-30 19:10:16.557  1646  1646 F DEBUG   :     ip  e8d34d38  sp  bf84716c  lr  bf84d1b4  pc  bf84d200
+09-30 19:10:16.557  1646  1646 F DEBUG   : backtrace:
+09-30 19:10:16.557  1646  1646 F DEBUG   :       #00 pc 00002200  /data/app/~~VDTYAIwPczInpO2yfTAJjQ==/com.ani5089.masalle-vig_liMp6KzRtUdjvV890A==/lib/arm/libMaSalle.so (LireCapteur(int const volatile*)+12)
+09-30 19:10:16.557  1646  1646 F DEBUG   :       #01 pc 000021b0  /data/app/~~VDTYAIwPczInpO2yfTAJjQ==/com.ani5089.masalle-vig_liMp6KzRtUdjvV890A==/lib/arm/libMaSalle.so (android_main+76)
+09-30 19:10:16.557  1646  1646 F DEBUG   :       #02 pc 00003640  /data/app/~~VDTYAIwPczInpO2yfTAJjQ==/com.ani5089.masalle-vig_liMp6KzRtUdjvV890A==/lib/arm/libMaSalle.so (android_app_entry+268)
+09-30 19:10:16.557  1646  1646 F DEBUG   :       #03 pc 000a8ca7  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: e0b2975f201bfaf34d6bad8983beb8b7)
+09-30 19:10:16.557  1646  1646 F DEBUG   :       #04 pc 00061e85  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: e0b2975f201bfaf34d6bad8983beb8b7)
