@@ -28,8 +28,8 @@ int main() {
         }
         total += taille;
 
-        if (CommencePar(chemin, "META-INF/") &&
-            (FinitPar(chemin, ".RSA") || FinitPar(chemin, ".DSA") || FinitPar(chemin, ".EC"))) {
+        bool certificat = FinitPar(chemin, ".RSA") || FinitPar(chemin, ".DSA") || FinitPar(chemin, ".EC");
+        if (CommencePar(chemin, "META-INF/") && certificat) {
             signe = true;
         }
         if (CommencePar(chemin, dossierAbi)) {
