@@ -10,11 +10,15 @@ int main() {
     for (int i = 0; i < s; ++i) {
         std::string nom;
         long long debug = 0, release = 0;
-        if (!(std::cin >> nom >> debug >> release)) break;
+        if (!(std::cin >> nom >> debug >> release)) {
+            break;
+        }
 
         long long facteur = release > 0 ? (debug + release / 2) / release : 0;
         bool tient = release <= budget;
-        if (debug > budget && tient) ++trompe;
+        if (debug > budget && tient) {
+            ++trompe;
+        }
 
         std::cout << nom << ' ' << facteur << ' ' << (tient ? "TIENT" : "DEPASSE") << '\n';
     }
