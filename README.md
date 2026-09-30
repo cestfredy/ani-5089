@@ -22,6 +22,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo1 | [`chapitre-02/exo1-votre_premier_fichier_de_projet`](chapitre-02/exo1-votre_premier_fichier_de_projet) |
 | exo19 | [`chapitre-02/exo19-faire_planter_et_retrouver_pourquoi`](chapitre-02/exo19-faire_planter_et_retrouver_pourquoi) |
 | exo36 | [`chapitre-02/exo36-la_mesure_qui_tient_dans_le_budget_et_celle_qui_trompe`](chapitre-02/exo36-la_mesure_qui_tient_dans_le_budget_et_celle_qui_trompe) |
+| exo37 | [`chapitre-02/exo37-ce_qu_il_y_a_vraiment_dans_le_paquet`](chapitre-02/exo37-ce_qu_il_y_a_vraiment_dans_le_paquet) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
