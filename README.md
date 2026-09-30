@@ -8,6 +8,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | c1-exo2 | Le tableau des budgets | rédaction / mesure | [`exo2-le_tableau_des_budgets`](chapitre-01/exo2-le_tableau_des_budgets) |
 | c1-exo3 | Six centimètres et demi | rédaction / mesure | [`exo3-six_centimetres_et_demi`](chapitre-01/exo3-six_centimetres_et_demi) |
 | c1-exo4 | Le décalage des deux yeux | rédaction / mesure | [`exo4-le_decalage_des_deux_yeux`](chapitre-01/exo4-le_decalage_des_deux_yeux) |
+| c1-exo5 | Le mal du transport, sans casque | rédaction / mesure | [`exo5-le_mal_du_transport_sans_casque`](chapitre-01/exo5-le_mal_du_transport_sans_casque) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
