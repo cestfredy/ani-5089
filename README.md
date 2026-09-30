@@ -22,6 +22,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo1 | [`chapitre-02/exo1-votre_premier_fichier_de_projet`](chapitre-02/exo1-votre_premier_fichier_de_projet) |
 | exo19 | [`chapitre-02/exo19-faire_planter_et_retrouver_pourquoi`](chapitre-02/exo19-faire_planter_et_retrouver_pourquoi) |
 | exo31 | [`chapitre-02/exo31-les_dependances_qui_n_arrivent_pas_toutes_seules`](chapitre-02/exo31-les_dependances_qui_n_arrivent_pas_toutes_seules) |
+| exo33 | [`chapitre-02/exo33-lire_un_symbole_non_resolu`](chapitre-02/exo33-lire_un_symbole_non_resolu) |
 | exo34 | [`chapitre-02/exo34-le_filtre_s_applique_t_il`](chapitre-02/exo34-le_filtre_s_applique_t_il) |
 | exo35 | [`chapitre-02/exo35-choisir_l_appareil_parmi_trois`](chapitre-02/exo35-choisir_l_appareil_parmi_trois) |
 | exo36 | [`chapitre-02/exo36-la_mesure_qui_tient_dans_le_budget_et_celle_qui_trompe`](chapitre-02/exo36-la_mesure_qui_tient_dans_le_budget_et_celle_qui_trompe) |
