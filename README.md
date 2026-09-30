@@ -21,6 +21,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 |---|---|
 | exo1 | [`chapitre-02/exo1-votre_premier_fichier_de_projet`](chapitre-02/exo1-votre_premier_fichier_de_projet) |
 | exo19 | [`chapitre-02/exo19-faire_planter_et_retrouver_pourquoi`](chapitre-02/exo19-faire_planter_et_retrouver_pourquoi) |
+| exo24 | [`chapitre-02/exo24-le_journal_de_bord_de_votre_portage`](chapitre-02/exo24-le_journal_de_bord_de_votre_portage) |
 | exo31 | [`chapitre-02/exo31-les_dependances_qui_n_arrivent_pas_toutes_seules`](chapitre-02/exo31-les_dependances_qui_n_arrivent_pas_toutes_seules) |
 | exo32 | [`chapitre-02/exo32-l_ordre_dans_lequel_on_donne_les_bibliotheques`](chapitre-02/exo32-l_ordre_dans_lequel_on_donne_les_bibliotheques) |
 | exo33 | [`chapitre-02/exo33-lire_un_symbole_non_resolu`](chapitre-02/exo33-lire_un_symbole_non_resolu) |
