@@ -15,4 +15,4 @@ Source : [HMD Geometry Database, Meta Quest 3 (72Hz)](https://github.com/risa200
 
 Le champ est plus large vers l'extérieur (54° à gauche) que vers le nez (40° à droite), et plus large vers le bas que vers le haut.
 
-Avec un champ symétrique de même surface (environ 47° de chaque côté), on dessinerait des pixels du côté du nez que l'œil ne voit pas à travers la lentille, on couperait une partie du côté extérieur qu'il voit, et la perspective ne correspondrait plus à la lentille, donc les objets paraîtraient déformés ou à la mauvaise profondeur.
+Avec un champ symétrique de même surface (environ 47° à gauche et à droite, 49° en haut et en bas), on dessinerait des pixels du côté du nez que l'œil ne voit pas à travers la lentille, on couperait une partie du côté extérieur qu'il voit, et la perspective ne correspondrait plus à la lentille, donc les objets paraîtraient déformés ou à la mauvaise profondeur.
