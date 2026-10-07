@@ -36,6 +36,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 |---|---|
 | exo1 | [`chapitre-03/exo1-la_fenetre_nue`](chapitre-03/exo1-la_fenetre_nue) |
 | exo9 | [`chapitre-03/exo9-le_defaut_du_moteur_reproduit_puis_corrige`](chapitre-03/exo9-le_defaut_du_moteur_reproduit_puis_corrige) |
+| exo13 | [`chapitre-03/exo13-le_journal_des_evenements`](chapitre-03/exo13-le_journal_des_evenements) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.

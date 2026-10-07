@@ -1,0 +1,5 @@
+Le type qui m'a surpris est Redimensionnement. Je m'attendais à voir la souris en tête, puisque je l'ai bougée pendant presque toute la minute. Or Redimensionnement compte 1275 lignes sur 2556, soit la moitié du journal, devant Souris (1008). Je n'ai pourtant tiré le bord de la fenêtre que pendant quelques secondes.
+
+L'explication est que le système n'envoie pas un événement à la fin du redimensionnement, mais un pour chaque taille intermédiaire, plus d'une centaine de fois par seconde tant que le bord bouge : environ 180 par seconde dans mon journal, sur à peu près sept secondes de redimensionnement en tout. Un rappel de redimensionnement qui ferait un travail lourd, comme recréer les surfaces de rendu, serait donc exécuté des centaines de fois pour un seul geste. Il vaut mieux noter la nouvelle taille dans le rappel et ne faire le travail qu'une fois par image.
+
+Une autre surprise, plus petite : Touche compte 191 lignes alors que j'ai appuyé sur peu de touches. Une touche maintenue produit des répétitions, comme le dit le cours.
