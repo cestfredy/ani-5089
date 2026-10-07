@@ -43,6 +43,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo34 | [`chapitre-03/exo34-le_rappel_qu_on_retire`](chapitre-03/exo34-le_rappel_qu_on_retire) |
 | exo35 | [`chapitre-03/exo35-wasd_ou_zqsd_les_deux`](chapitre-03/exo35-wasd_ou_zqsd_les_deux) |
 | exo36 | [`chapitre-03/exo36-les_pixels_que_vous_croyez_avoir`](chapitre-03/exo36-les_pixels_que_vous_croyez_avoir) |
+| exo37 | [`chapitre-03/exo37-la_fenetre_qui_ne_releve_pas_son_courrier`](chapitre-03/exo37-la_fenetre_qui_ne_releve_pas_son_courrier) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
