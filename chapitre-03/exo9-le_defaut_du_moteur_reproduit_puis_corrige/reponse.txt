@@ -1,0 +1,7 @@
+Les deux séries viennent de la même manipulation : à chaque image, le programme lit le champ rawDeltaX / rawDeltaY du moteur (avant.txt) et mon accumulateur (apres.txt). Les dix lignes sont dix images de suite, à cheval sur l'arrêt de la souris.
+
+Première différence, quand j'arrête la souris. Dans avant.txt, les six dernières lignes valent toutes 1 -1, alors que ma main ne touche plus la souris. Le moteur écrit ce champ à chaque événement brut, mais ne le remet jamais à zéro : sans nouvel événement, il garde le dernier mouvement reçu. Si je l'intègre à chaque image, la tête continue de tourner toute seule, d'un petit pas par image, indéfiniment. Dans apres.txt, les cinq dernières lignes valent 0 0 : mon accumulateur est vidé à chaque image, même quand rien n'a bougé, donc la tête s'arrête avec la main.
+
+Seconde différence, quand je bouge vite. À la troisième image, le moteur donne 18 -11 et mon accumulateur 56 -37, soit environ trois fois plus. À la quatrième, 2 -1 contre 19 -10. La souris envoie plusieurs événements bruts entre deux images. Le moteur écrase son champ à chaque événement : à l'image, il ne reste que le dernier, et les autres sont perdus. Mon accumulateur les ajoute tous. Avec le moteur, la tête tourne donc moins que la main, et d'autant moins que la main va vite. Aux images lentes (les deux premières), un seul événement arrive par image et les deux séries sont presque égales.
+
+Les deux défauts ont la même cause : un champ qui écrase au lieu d'ajouter, et que personne ne vide.
