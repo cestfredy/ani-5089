@@ -14,6 +14,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | c1-exo6 | [`chapitre-01/exo6-la_pire_image`](chapitre-01/exo6-la_pire_image) |
 | c1-exo7 | [`chapitre-01/exo7-le_cout_du_doublement`](chapitre-01/exo7-le_cout_du_doublement) |
 | c1-exo8 | [`chapitre-01/exo8-le_champ_de_vision_asymetrique`](chapitre-01/exo8-le_champ_de_vision_asymetrique) |
+| c1-exo9 | [`chapitre-01/exo9-trois_experiences_decrites_sans_image`](chapitre-01/exo9-trois_experiences_decrites_sans_image) |
 
 ## chapitre-02
 
