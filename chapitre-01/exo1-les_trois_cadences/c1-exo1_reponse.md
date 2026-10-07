@@ -10,6 +10,8 @@
 
 Les trois nombres à retenir pour le chapitre 10 : **5,9 ms, 3,1 ms et 0,3 ms**.
 
+À 120 Hz, il ne reste que 0,3 ms pour tout le code de l'image : aucune marge, et la moindre image un peu plus lente dépasse le budget, donc l'image est ratée et remplacée par une image reprojetée, ce qui se sent dans le casque.
+
 ## Code
 
 Fichier : [`main.cpp`](main.cpp)
