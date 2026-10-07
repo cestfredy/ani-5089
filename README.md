@@ -38,6 +38,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo9 | [`chapitre-03/exo9-le_defaut_du_moteur_reproduit_puis_corrige`](chapitre-03/exo9-le_defaut_du_moteur_reproduit_puis_corrige) |
 | exo13 | [`chapitre-03/exo13-le_journal_des_evenements`](chapitre-03/exo13-le_journal_des_evenements) |
 | exo31 | [`chapitre-03/exo31-saisir_une_fois_pas_trente_fois_par_seconde`](chapitre-03/exo31-saisir_une_fois_pas_trente_fois_par_seconde) |
+| exo32 | [`chapitre-03/exo32-l_accumulateur_qu_on_vide_et_celui_qu_on_oublie`](chapitre-03/exo32-l_accumulateur_qu_on_vide_et_celui_qu_on_oublie) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
