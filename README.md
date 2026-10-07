@@ -16,6 +16,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | c1-exo8 | [`chapitre-01/exo8-le_champ_de_vision_asymetrique`](chapitre-01/exo8-le_champ_de_vision_asymetrique) |
 | c1-exo9 | [`chapitre-01/exo9-trois_experiences_decrites_sans_image`](chapitre-01/exo9-trois_experiences_decrites_sans_image) |
 | c1-exo10 | [`chapitre-01/exo10-le_plan_de_votre_salle`](chapitre-01/exo10-le_plan_de_votre_salle) |
+| c1-exo11 | [`chapitre-01/exo11-l_enquete`](chapitre-01/exo11-l_enquete) |
 
 ## chapitre-02
 
