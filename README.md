@@ -30,5 +30,11 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo36 | [`chapitre-02/exo36-la_mesure_qui_tient_dans_le_budget_et_celle_qui_trompe`](chapitre-02/exo36-la_mesure_qui_tient_dans_le_budget_et_celle_qui_trompe) |
 | exo37 | [`chapitre-02/exo37-ce_qu_il_y_a_vraiment_dans_le_paquet`](chapitre-02/exo37-ce_qu_il_y_a_vraiment_dans_le_paquet) |
 
+## chapitre-03
+
+| Exercice | Dossier |
+|---|---|
+| exo1 | [`chapitre-03/exo1-la_fenetre_nue`](chapitre-03/exo1-la_fenetre_nue) |
+
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
