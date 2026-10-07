@@ -41,6 +41,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo32 | [`chapitre-03/exo32-l_accumulateur_qu_on_vide_et_celui_qu_on_oublie`](chapitre-03/exo32-l_accumulateur_qu_on_vide_et_celui_qu_on_oublie) |
 | exo33 | [`chapitre-03/exo33-deux_touches_font_un_axe`](chapitre-03/exo33-deux_touches_font_un_axe) |
 | exo34 | [`chapitre-03/exo34-le_rappel_qu_on_retire`](chapitre-03/exo34-le_rappel_qu_on_retire) |
+| exo35 | [`chapitre-03/exo35-wasd_ou_zqsd_les_deux`](chapitre-03/exo35-wasd_ou_zqsd_les_deux) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
