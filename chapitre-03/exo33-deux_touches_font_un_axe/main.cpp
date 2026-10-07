@@ -9,6 +9,9 @@ struct Commande {
 };
 
 int main() {
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+
     int c = 0;
     std::cin >> c;
     if (c < 0) {
@@ -25,7 +28,9 @@ int main() {
         long long axe = 0;
         for (const auto& commande : commandes) {
             long long brut = 0;
-            std::cin >> brut;
+            if (!(std::cin >> brut)) {
+                return 0;
+            }
             long long contribution = brut * commande.echelle / 1000;
             long long absolue = contribution;
             if (absolue < 0) {
