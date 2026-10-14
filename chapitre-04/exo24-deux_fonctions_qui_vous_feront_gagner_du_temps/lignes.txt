@@ -1,0 +1,9 @@
+Avant : 78 lignes
+
+Après : 62 lignes
+
+Comptage :
+J'ai compté les lignes non vides du code qui place les objets de la salle : les fonctions de placement et les constantes de position et de taille qu'elles utilisent, avec la même règle avant et après, et le même style d'écriture (une instruction par ligne, sans commentaires).
+Avant, c'est la même salle écrite sans les deux fonctions, avec le code des exercices de la porte et des fenêtres et de la lumière : 27 constantes (dimensions de la salle, de la porte, des fenêtres, des panneaux, de la table, et les hauteurs calculées à la main comme Y_PLATEAU ou Y_PIED), DessinerSalle 26 lignes, DessinerOuvertures 12 lignes et DessinerTable 13 lignes.
+Après, dans poser.cpp : 6 constantes, PoserAuSol et PoserSurTable 3 lignes chacune, les petites fonctions BoitePosee (4), AuSol (5) et SurTable (5) qui les utilisent, et DessinerSalle 36 lignes. Ce compte inclut 2 lignes pour le livre et la boîte posés sur la table, qui n'existaient pas avant : à objets égaux, l'écart serait de 18 lignes au lieu de 16.
+J'ai laissé de côté, des deux côtés : les #include, la fonction qui soumet un cube au renderer et calcule sa boîte (elle existe dans les deux versions), la création de la fenêtre et du renderer, la caméra, le soleil, la boucle d'images, et dans poser.cpp la fonction Verifier et ses trois appels, qui testent les fonctions mais ne placent rien.
