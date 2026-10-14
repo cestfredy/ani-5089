@@ -1,0 +1,20 @@
+Lignes :
+    NkMeshHandle cube = rendu->GetMeshSystem()->GetCube();
+        NkVec3f centre = DevantLaCamera(DISTANCE);
+        float32 arete = ARETE;
+        if (panne == ECHELLE_NULLE) {
+            arete = 0.f;
+        }
+        NkDrawCall3D leCube;
+        leCube.mesh = cube;
+        leCube.transform = NkMat4f::Translate(centre) * NkMat4f::Scale({arete, arete, arete});
+        leCube.tint = {1.f, 1.f, 1.f};
+        if (panne != SANS_BOITE) {
+            float32 demi = ARETE * 0.5f;
+            leCube.aabb = {{centre.x - demi, centre.y - demi, centre.z - demi},
+                           {centre.x + demi, centre.y + demi, centre.z + demi}};
+        }
+        rendu3d->Submit(leCube);
+
+Cause :
+Le cube s'est affiché du premier coup (cube.png). J'ai donc provoqué exprès une cause de la liste : une échelle nulle. Avec l'argument echelle_nulle, la variable arete vaut 0, et la ligne leCube.transform = NkMat4f::Translate(centre) * NkMat4f::Scale({arete, arete, arete}); écrase le cube en un seul point. Résultat : l'écran reste entièrement vide, il ne reste que le fond, et rien ne signale de problème. Pourtant le cube est bien pris par GetCube(), il a sa lumière, sa place à deux mètres et sa boîte englobante, et Submit l'accepte sans rien dire : seule la taille est nulle, donc aucun pixel n'est couvert. C'est pour cela qu'un écran vide se diagnostique en parcourant la liste dans l'ordre plutôt qu'en attendant un message : ici, il a suffi de relire la valeur passée à Scale.
