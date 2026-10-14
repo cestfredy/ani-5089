@@ -55,6 +55,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 |---|---|
 | exo10 | [`chapitre-04/exo10-ce_que_vos_sous_systemes_coutent_vraiment`](chapitre-04/exo10-ce_que_vos_sous_systemes_coutent_vraiment) |
 | exo22 | [`chapitre-04/exo22-la_porte_et_les_fenetres`](chapitre-04/exo22-la_porte_et_les_fenetres) |
+| exo25 | [`chapitre-04/exo25-la_lumiere_qui_change_tout`](chapitre-04/exo25-la_lumiere_qui_change_tout) |
 | exo26 | [`chapitre-04/exo26-le_meme_programme_deux_interfaces_graphiques`](chapitre-04/exo26-le_meme_programme_deux_interfaces_graphiques) |
 | exo27 | [`chapitre-04/exo27-cent_cubes_et_le_premier_mur_du_reel`](chapitre-04/exo27-cent_cubes_et_le_premier_mur_du_reel) |
 
