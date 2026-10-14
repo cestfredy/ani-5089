@@ -1,0 +1,5 @@
+Plateau : le dessus est à 0,75 m et le plateau fait 0,05 m d'épaisseur.
+Centre du plateau = 0,75 - 0,05 / 2 = 0,725 m.
+
+Pieds : un pied va du sol au dessous du plateau.
+Hauteur d'un pied = 0,75 - 0,05 = 0,70 m ; centre du pied = 0,70 / 2 = 0,35 m.
