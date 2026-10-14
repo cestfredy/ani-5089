@@ -1,0 +1,8 @@
+Constat :
+Avec la face avant des panneaux exactement dans le plan de la face intérieure du mur (décalage 0), la porte n'est pas d'un brun uni : elle est zébrée de fines hachures diagonales de la couleur du mur, comme si on la voyait à travers une grille. Les deux fenêtres ont le même défaut, avec des bandes diagonales plus larges, surtout sur la fenêtre la plus éloignée. Par endroits, c'est le mur qui l'emporte sur le panneau, ailleurs c'est le panneau : les deux surfaces se disputent l'image.
+
+Nom :
+C'est le z-fighting, ou conflit de profondeur. La face du panneau et la face du mur sont dans le même plan, donc elles ont la même profondeur. Le tampon de profondeur n'a qu'une précision limitée, et les petites erreurs d'arrondi décident au hasard, pixel par pixel, laquelle des deux surfaces est devant. Le gagnant change d'un pixel à l'autre et d'une image à l'autre, d'où les hachures qui bougent.
+
+Réglage :
+J'ai avancé les trois panneaux de 1 mm vers l'intérieur de la pièce (DECALAGE_RETENU = 0.001f dans ouvertures.cpp). J'ai essayé 0 ; 0,1 ; 0,25 ; 0,5 et 1 mm : le défaut est net à 0 et a disparu dès 0,1 mm depuis ma caméra. Je ne prends pas moins, parce que la précision du tampon de profondeur diminue avec la distance : vu de plus loin dans la salle, ou sur une autre carte graphique, 0,1 mm pourrait ne plus suffire, et 1 mm laisse une marge de dix fois. Je ne prends pas plus, parce qu'un panneau trop avancé, par exemple de 1 cm, se verrait décollé du mur sur ses bords, de profil ou en s'approchant, ce qui casse l'illusion d'une vraie porte. À 1 mm, l'écart est invisible.
