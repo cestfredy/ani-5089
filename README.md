@@ -53,6 +53,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 
 | Exercice | Dossier |
 |---|---|
+| exo8 | [`chapitre-04/exo8-votre_premiere_salle_en_cubes`](chapitre-04/exo8-votre_premiere_salle_en_cubes) |
 | exo10 | [`chapitre-04/exo10-ce_que_vos_sous_systemes_coutent_vraiment`](chapitre-04/exo10-ce_que_vos_sous_systemes_coutent_vraiment) |
 | exo21 | [`chapitre-04/exo21-un_cube_et_rien_d_autre`](chapitre-04/exo21-un_cube_et_rien_d_autre) |
 | exo22 | [`chapitre-04/exo22-la_porte_et_les_fenetres`](chapitre-04/exo22-la_porte_et_les_fenetres) |
