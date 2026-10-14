@@ -1,0 +1,5 @@
+Un par un : 206 cubes, drawCalls = 6221, cadence = 59.7 images/s (sur 400 images ; 86.8 images/s à 203 cubes)
+
+Groupés : 206 cubes, drawCalls = 1325, cadence = 103.3 images/s ; nouveau seuil : 825 cubes (54.0 images/s, drawCalls = 5159 ; 64.4 images/s à 800 cubes)
+
+Trouvé : NkDrawCallInstanced, déclaré dans NKRenderer/Core/NkRendererTypes.h, que l'on soumet d'un seul appel avec NkRender3D::SubmitInstanced, déclaré dans NKRenderer/Tools/Render3D/NkRender3D.h. Un seul NkDrawCallInstanced porte le maillage du cube, la liste des transformations et des teintes de tous les cubes, et une boîte englobante qui les contient tous. drawCalls ne tombe pas à 1, parce que le renderer découpe le groupe en paquets de 128 instances au plus (kMaxInstancesUBO = 128 dans NkRender3D.h) et dessine chaque objet dans plusieurs passes, comme les ombres. Mesures faites sous OpenGL, sans vsync. Sur ce portable, le seuil des cubes groupés varie d'un passage à l'autre selon la chaleur de la machine : un second passage donnait encore 74.5 images/s à 825 cubes.
