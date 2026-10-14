@@ -1,0 +1,10 @@
+Facteur : l'échelle de chaque axe. Dans l'ordre Scale * Translate, la translation
+(0 ; 1,25 ; -2,05) est appliquée d'abord, puis l'échelle (4,2 ; 2,5 ; 0,1) la multiplie
+composante par composante : y = 1,25 × 2,5 = 3,125 et z = -2,05 × 0,1 = -0,205.
+x reste 0 car 0 × 4,2 = 0. Pour le mur du fond, y est donc multiplié par 2,5 et z par 0,1.
+
+Pourquoi : la matrice la plus à droite s'applique en premier. Avec Scale * Translate,
+le cube est d'abord déplacé, puis tout est mis à l'échelle, y compris son déplacement :
+l'échelle attrape aussi la translation. Le mur monte au-dessus du plafond et se colle presque au centre de la salle : sur mauvais.png, les quatre murs ne touchent plus le sol, ils se croisent en hauteur près du centre, et l'on voit le vide entre eux et le sol.
+Avec Translate * Scale, l'échelle agit sur le cube centré à l'origine, puis la
+translation le pose à sa place sans être déformée.
