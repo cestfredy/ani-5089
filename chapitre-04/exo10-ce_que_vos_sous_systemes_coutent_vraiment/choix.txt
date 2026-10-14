@@ -1,0 +1,10 @@
+Je garde :
+RENDER3D, 5895 us : le rendu de la salle elle-même.
+SHADOW, +97 us : les ombres de la table et des objets.
+RENDER2D, +157 us : les textes et les indications affichés dans la salle.
+GPU_CULLING, +136 us : le tri des objets hors du champ de vision.
+Total estimé en additionnant les surcoûts : 5895 + 97 + 157 + 136 = 6285 us, soit 6,3 ms sur les 11,1 ms d'une image à 90 Hz. Il reste environ 4,8 ms de marge.
+
+Pourquoi :
+RENDER3D est obligatoire : sans lui, il n'y a pas de salle. SHADOW est le sous-système le moins cher de mon classement (+97 us), et dans un casque les ombres aident beaucoup à juger où les objets sont posés, par exemple qu'un objet touche bien la table. RENDER2D coûte +157 us, mais il faut bien pouvoir afficher un texte ou une consigne à l'utilisateur. GPU_CULLING coûte +136 us dans ma petite salle, où presque tout est visible, mais c'est lui qui évite de dessiner ce qui est hors du champ quand la scène grandit : c'est un coût qui rapporte plus qu'il ne prend dès qu'il y a beaucoup d'objets.
+J'écarte POST_PROCESS, de loin le plus cher (+1061 us, plus d'une milliseconde à lui seul), et qui en plus devra être payé pour chaque œil. J'écarte aussi VFX, ANIMATION, OFFSCREEN et RAYTRACING : ils coûtent chacun entre 112 et 137 us et ne servent à rien dans une salle fixe sans effets, sans objets animés, sans capture d'écran et sans lancer de rayons. Je garde de la marge parce que mes mesures sont faites pour un seul œil : dans un casque, l'image est dessinée deux fois, et le total grossira.

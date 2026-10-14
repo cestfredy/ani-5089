@@ -49,5 +49,11 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo36 | [`chapitre-03/exo36-les_pixels_que_vous_croyez_avoir`](chapitre-03/exo36-les_pixels_que_vous_croyez_avoir) |
 | exo37 | [`chapitre-03/exo37-la_fenetre_qui_ne_releve_pas_son_courrier`](chapitre-03/exo37-la_fenetre_qui_ne_releve_pas_son_courrier) |
 
+## chapitre-04
+
+| Exercice | Dossier |
+|---|---|
+| exo10 | [`chapitre-04/exo10-ce_que_vos_sous_systemes_coutent_vraiment`](chapitre-04/exo10-ce_que_vos_sous_systemes_coutent_vraiment) |
+
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
