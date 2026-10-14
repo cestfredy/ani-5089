@@ -1,0 +1,6 @@
+Première : Software (rendu logiciel) 175.44 ms par image, moyenne sur 400 images après 30 ignorées
+
+Seconde : OpenGL 7.06 ms par image, moyenne sur 400 images après 30 ignorées
+
+Différences :
+Les deux captures montrent la même salle, sous le même angle : la table, ses quatre pieds et son ombre sont à la même place. Mais l'image n'a pas du tout le même aspect. Avec le rendu logiciel (premiere.png), tout est clair et plat : le mur de gauche est presque blanc, le mur du fond et le mur de droite ont exactement le même gris uniforme, si bien qu'on ne voit plus où ils se rejoignent, et la table est d'un crème très pâle. L'ombre de la table est grise, avec un bord en petits escaliers, et quelques points blancs isolés apparaissent sur le mur du fond. Avec OpenGL (seconde.png), l'image est beaucoup plus sombre et contrastée, avec des couleurs plus chaudes : la table et le sol sont beiges, les murs du fond et de droite sont presque noirs et bien séparés, les coins et le bas des murs sont assombris, et l'ombre sous la table est noire et nette. On voit aussi des bandes verticales plus claires et plus sombres sur les murs, que le rendu logiciel n'a pas. Le rendu logiciel n'applique donc pas les mêmes effets d'éclairage et de post-traitement que la carte graphique, et il est en plus environ 25 fois plus lent : 175 ms par image, soit moins de 6 images par seconde.

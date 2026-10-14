@@ -54,6 +54,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | Exercice | Dossier |
 |---|---|
 | exo10 | [`chapitre-04/exo10-ce_que_vos_sous_systemes_coutent_vraiment`](chapitre-04/exo10-ce_que_vos_sous_systemes_coutent_vraiment) |
+| exo26 | [`chapitre-04/exo26-le_meme_programme_deux_interfaces_graphiques`](chapitre-04/exo26-le_meme_programme_deux_interfaces_graphiques) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
