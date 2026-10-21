@@ -68,6 +68,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 
 | Exercice | Dossier |
 |---|---|
+| exo2 | [`chapitre-05/exo2-l_image_qui_n_existe_pas`](chapitre-05/exo2-l_image_qui_n_existe_pas) |
 | exo4 | [`chapitre-05/exo4-le_premier_mur_texture`](chapitre-05/exo4-le_premier_mur_texture) |
 | exo5 | [`chapitre-05/exo5-quatre_filtres_une_mesure`](chapitre-05/exo5-quatre_filtres_une_mesure) |
 | exo6 | [`chapitre-05/exo6-le_chemin_qui_marche_partout`](chapitre-05/exo6-le_chemin_qui_marche_partout) |
