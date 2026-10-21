@@ -1,0 +1,12 @@
+Ce qui a change :
+Le code est exactement le même dans les deux lancements d'avant la correction ; seul le dossier d'où je lance le programme change. Un chemin relatif comme murs/beton.jpg part du dossier courant. Lancé depuis le dossier de l'exercice, le dossier courant contient murs/, la texture est trouvée et le mur du fond la porte. Lancé depuis Build/Bin/Debug-Windows/Chemin/, le dossier courant ne contient pas murs/ : le chargement échoue (« Echec chargement texture : murs/beton.jpg » dans le journal de ce dossier) et le mur prend la couleur de repli, magenta. Ce n'est pas le rendu qui a changé, c'est le dossier courant : le même chemin relatif ne désigne plus le même fichier. Le journal suit le même piège : il s'écrit dans logs/ sous le dossier de lancement, donc après le lancement depuis Build il n'est plus à la racine de l'exercice.
+
+Ce que LocateResource essaie :
+D'après le commentaire de NkPath.h, LocateResource cherche le chemin relatif dans cet ordre : 
+1. le dossier courant (un lancement depuis la racine voit les mêmes fichiers qu'avant) ; 
+2. le dossier de l'exécutable ; 
+3. les parents de l'exécutable, huit niveaux au plus (Build/Bin/<cfg>/<App>/ est à quatre niveaux de la racine) ; 
+4. les parents du dossier courant, huit niveaux au plus. Il rend le chemin absolu trouvé, ou une chaîne vide s'il ne trouve rien, avec un avertissement au journal qui liste les dossiers essayés. Dans chemin.cpp, je teste cette chaîne avant de la donner à Load : si elle est vide, le mur reste gris au lieu de recevoir une texture invalide. Depuis Build, c'est l'étape 3 qui trouve murs/beton.jpg, en remontant de quatre dossiers depuis l'exécutable.
+
+Deja vu avec fopen :
+Je m'en doutais à moitié : au chapitre 4, il fallait déjà un lien vers Resources pour que le moteur trouve ses nuanceurs, et mes fichiers de résultats s'écrivaient toujours dans le dossier de lancement. C'est le même piège qu'un fopen avec un chemin relatif. Mais je n'aurais pas su expliquer la panne avant de la voir : c'est le mur magenta et la ligne du journal qui me l'ont rendue claire.
