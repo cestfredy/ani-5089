@@ -1,0 +1,4 @@
+avant, projet : lancé depuis le dossier de l'exercice avec le chemin relatif murs/beton.jpg, le mur du fond porte bien la texture de béton ; le journal dit « Texture chargee : murs/beton.jpg (512x512 sRGB) ».
+avant, Build : lancé depuis Build/Bin/Debug-Windows/Chemin/ avec le même chemin relatif, le mur du fond est entièrement magenta, la couleur de repli du moteur ; ligne du journal Build/Bin/Debug-Windows/Chemin/logs/app.log : [ERR] [default] [NkTextureLibrary.cpp:478 in Load] -> [NkTextureLibrary] Echec chargement texture : murs/beton.jpg
+apres, projet : lancé depuis le dossier de l'exercice, LocateResource rend le chemin absolu .../chapitre-05/exo6-le_chemin_qui_marche_partout/murs/beton.jpg et le mur du fond porte la texture de béton.
+apres, Build : lancé depuis Build/Bin/Debug-Windows/Chemin/, LocateResource rend le même chemin absolu, trouvé en remontant depuis le dossier de l'exécutable, et le mur du fond porte la texture de béton, comme depuis le projet.
