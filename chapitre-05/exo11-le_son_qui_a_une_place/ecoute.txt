@@ -1,0 +1,18 @@
+Position 1 :
+Caméra près de la fenêtre, en (-1,40 ; 1,70 ; -0,40), le regard vers le mur du fond. La pluie est à la première fenêtre, en (-1,98 ; 1,40 ; -0,90), avec minDistance 0,5 m (en deçà, le son ne grossit plus) et maxDistance 8 m (au-delà, il se tait ; la diagonale de la salle fait 5,7 m, donc on l'entend partout).
+J'entends la pluie seulement dans l'oreille gauche, et très fort : c'est la position où elle est la plus forte. Elle semble se rapprocher légèrement du milieu, sans y arriver. À cette première écoute, ça ne ressemble pas vraiment à de la pluie ; c'est à partir de l'écoute suivante que j'ai eu l'impression d'entendre de la pluie.
+
+Position 2 :
+Caméra au centre de la salle, en (0 ; 1,70 ; 0), le regard vers le mur du fond.
+Le son est plus fort que dans le coin, mais plus faible que près de la fenêtre : il faiblit à mesure qu'on s'éloigne de la fenêtre vers le centre. Il vient toujours plutôt de la gauche, en s'étalant vers le milieu. Ici, il ne ressemble pas trop à une pluie : on dirait plutôt un bruit extérieur difficile à décrire, comme un trafic routier intense.
+
+Position 3 :
+Caméra dans le coin opposé à la fenêtre, en (1,70 ; 1,70 ; 1,70), le regard vers le mur du fond.
+Le son est plus fort à gauche qu'à droite, mais il est moyen, presque faible. On a l'impression qu'il est loin, et que si on s'approchait on l'entendrait mieux : j'ai même rapproché ma tête de l'ordinateur sans y penser.
+
+Sans positional :
+Caméra au centre, en (0 ; 1,70 ; 0), avec positional à faux.
+Par rapport à la position 2, il devient difficile de situer le son : il est aussi fort à gauche qu'à droite et qu'au milieu, il n'a plus de direction. Et cette fois, on a vraiment l'impression qu'il pleut.
+
+Ce que les mesures montrent :
+J'attendais une source à gauche plus forte dans l'oreille gauche que dans la droite, une source devant entendue à égalité des deux côtés, et sans positional un son identique aux deux oreilles. Les mesures le confirment, mais de façon plus tranchée que prévu. Avec positional, la pluie à gauche donne G 0,0800 et D 0,0000 : l'oreille droite ne reçoit strictement rien, et la droite donne exactement l'inverse. Dans la réalité, l'oreille opposée entend encore la source, plus faiblement et un peu plus tard, à travers la tête ; ce moteur fait un panoramique pur, sans ce reste. Devant, les deux oreilles sont à égalité, 0,0567 chacune : c'est 0,0800 multiplié par 0,71 (cos 45°), donc l'énergie totale est conservée (0,0567² + 0,0567² ≈ 0,0800²), un panoramique à puissance constante. Sans positional, les deux oreilles reçoivent environ 0,157 dans les trois positions : ni direction, ni distance. C'est deux fois plus fort qu'avec positional à gauche ou à droite (0,0800 / 0,157 ≈ 0,51) : à deux mètres, l'atténuation par la distance divise le niveau par deux, comme la loi en 1 / distance avec une distance de référence de 1 m. À l'écoute, la pluie n'était jamais dans une seule oreille sauf près de la fenêtre, et elle glissait vers le milieu : c'est cohérent, car aux trois positions d'écoute la fenêtre n'est pas exactement à 90° à gauche, mais à gauche et devant ; le moteur en envoie donc un peu à droite, comme pour la mesure devant. La force qui baisse de la fenêtre au centre puis au coin correspond à l'atténuation par la distance mesurée ici. Les mesures ne disent rien de l'avant et de l'arrière : une source derrière l'auditeur, avec ce seul panoramique gauche-droite, donnerait sans doute les mêmes chiffres que devant. Les petites différences d'un passage à l'autre, au millième près, viennent du bruit rose, tiré au hasard à chaque lancement.

@@ -69,6 +69,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | Exercice | Dossier |
 |---|---|
 | exo8 | [`chapitre-05/exo8-le_sdf_mesure`](chapitre-05/exo8-le_sdf_mesure) |
+| exo11 | [`chapitre-05/exo11-le_son_qui_a_une_place`](chapitre-05/exo11-le_son_qui_a_une_place) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
