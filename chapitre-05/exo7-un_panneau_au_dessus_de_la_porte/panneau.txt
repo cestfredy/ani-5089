@@ -1,0 +1,11 @@
+atlas : 512 x 512
+image : 72 x 32
+
+Ma police et sa taille :
+Inter, la police embarquée dans le moteur (NkEmbeddedFontId::Inter), rastérisée à 32 pixels dans un atlas ordinaire, pas en SDF. Aucun fichier de police n'est fourni : elle est compilée dans le binaire. À 32 px, les six lettres de « Sortie » tiennent dans une image de 72 x 32 : 72 est la somme des avances des glyphes, et 32 la hauteur de ligne (ascent - descent). L'atlas de 512 x 512 contient toute la police, mais le panneau n'en recopie que ces six glyphes.
+
+A trois metres :
+Le panneau vert est bien au-dessus de la porte, contre le mur du fond, et « Sortie » se lit à l'endroit, en clair sur le vert. À l'écran, il occupe environ 76 x 33 pixels, presque exactement la taille de l'image (72 x 32) : chaque pixel de l'image tombe à peu près sur un pixel de l'écran. Le mot est net, les lettres ont des bords propres, sans flou ni crénelage visible. À cette distance, 32 px suffisent.
+
+A cinquante centimetres :
+Le panneau remplit le haut de l'écran, environ 470 x 200 pixels, alors que l'image n'en a que 72 x 32 : chaque pixel de l'image est étiré sur six à sept pixels de l'écran. Le mot se lit toujours, mais les bords des lettres deviennent flous, et dans les courbes du S, du o et du e on voit les marches des pixels de l'atlas, adoucies par le filtrage. Ce n'est pas un défaut de placement : il n'y a simplement pas plus de détail dans l'image. Pour que ce soit net de près, il faudrait rastériser la police plus grande (un atlas et une image plus grands) ou passer à un atlas SDF.
