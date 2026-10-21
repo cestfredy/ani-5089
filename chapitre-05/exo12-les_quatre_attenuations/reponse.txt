@@ -1,0 +1,12 @@
+La loi physique :
+Pour une source ponctuelle, l'énergie se répartit sur une sphère de surface 4πd² : l'intensité baisse en 1/d², donc l'amplitude, ce que mesure la valeur efficace, baisse en 1/d. Elle est divisée par deux chaque fois que la distance double, soit -6 dB. C'est INVERSE qui suit cette loi : avec rolloff 1, il donne 1,000 à 1 m, 0,500 à 2 m, 0,250 à 4 m et 0,125 à 8 m, exactement 1/d avec minDistance = 1 m comme distance de référence. En deçà de minDistance, à 0,5 m, tous les modèles restent à 1,000 : le son ne grossit plus quand on s'approche, alors que la vraie loi donnerait 2. Avec rolloff 1, EXPONENTIAL donne les mêmes chiffres qu'INVERSE ; ce sont les deux colonnes identiques, et ce n'est pas une erreur : sa formule (d / min)^(-rolloff) vaut 1/d quand rolloff vaut 1. LINEAR ne suit pas du tout cette loi : il descend en ligne droite jusqu'à zéro à maxDistance = 100 m, et ne perd que 7 % à 8 m (0,929).
+
+Ce que change rolloff :
+Avec rolloff 2, les gains à 0,5 m et 1 m restent à 1,000 pour tous les modèles : rolloff ne joue qu'au-delà de minDistance.
+NONE : rien, 1,000 partout ; c'est la référence.
+INVERSE : la chute est plus rapide, 0,334 au lieu de 0,500 à 2 m, 0,143 au lieu de 0,250 à 4 m, 0,067 au lieu de 0,125 à 8 m. C'est la formule min / (min + rolloff (d - min)) : 1/3, 1/7, 1/15 ; ce n'est plus du 1/d.
+LINEAR : la pente double, 0,980 au lieu de 0,990 à 2 m et 0,859 au lieu de 0,929 à 8 m. Le gain atteindrait zéro à 50,5 m au lieu de 100 m.
+EXPONENTIAL : rolloff devient l'exposant, donc le gain passe en 1/d², 0,250 à 2 m, 0,063 à 4 m et 0,016 à 8 m. C'est lui qui se sépare d'INVERSE et chute le plus vite des quatre.
+
+Pour la porte du couloir :
+Je choisis INVERSE avec rolloff 1. Pour une porte au bout d'un couloir de 8 m, il donne un gain de 0,125 (-18 dB) : la porte s'entend encore, mais nettement plus loin qu'à 1 m (1,000), et chaque doublement de distance retire la même part, comme dans la réalité. LINEAR garderait 0,929 à 8 m : la porte grincerait presque aussi fort au bout du couloir qu'à côté, sans donner de distance. EXPONENTIAL avec rolloff 2 tomberait à 0,016 (-36 dB) à 8 m : la porte disparaîtrait presque. L'écoute au casque le confirme : avec INVERSE, le son à 1 m paraît proche et celui à 8 m nettement éloigné ; avec LINEAR, le son à 8 m paraît encore proche, sans différence forte avec 1 m, ce qui correspond à l'écart mesuré, 0,929 contre 1,000. Pour une porte qui doit s'entendre au loin tout en sonnant loin, c'est donc INVERSE.

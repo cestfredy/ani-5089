@@ -72,6 +72,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo7 | [`chapitre-05/exo7-un_panneau_au_dessus_de_la_porte`](chapitre-05/exo7-un_panneau_au_dessus_de_la_porte) |
 | exo8 | [`chapitre-05/exo8-le_sdf_mesure`](chapitre-05/exo8-le_sdf_mesure) |
 | exo11 | [`chapitre-05/exo11-le_son_qui_a_une_place`](chapitre-05/exo11-le_son_qui_a_une_place) |
+| exo12 | [`chapitre-05/exo12-les_quatre_attenuations`](chapitre-05/exo12-les_quatre_attenuations) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
