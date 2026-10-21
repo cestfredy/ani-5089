@@ -64,5 +64,11 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo26 | [`chapitre-04/exo26-le_meme_programme_deux_interfaces_graphiques`](chapitre-04/exo26-le_meme_programme_deux_interfaces_graphiques) |
 | exo27 | [`chapitre-04/exo27-cent_cubes_et_le_premier_mur_du_reel`](chapitre-04/exo27-cent_cubes_et_le_premier_mur_du_reel) |
 
+## chapitre-05
+
+| Exercice | Dossier |
+|---|---|
+| exo8 | [`chapitre-05/exo8-le_sdf_mesure`](chapitre-05/exo8-le_sdf_mesure) |
+
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
