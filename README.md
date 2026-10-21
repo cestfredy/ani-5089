@@ -68,6 +68,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 
 | Exercice | Dossier |
 |---|---|
+| exo4 | [`chapitre-05/exo4-le_premier_mur_texture`](chapitre-05/exo4-le_premier_mur_texture) |
 | exo6 | [`chapitre-05/exo6-le_chemin_qui_marche_partout`](chapitre-05/exo6-le_chemin_qui_marche_partout) |
 | exo7 | [`chapitre-05/exo7-un_panneau_au_dessus_de_la_porte`](chapitre-05/exo7-un_panneau_au_dessus_de_la_porte) |
 | exo8 | [`chapitre-05/exo8-le_sdf_mesure`](chapitre-05/exo8-le_sdf_mesure) |

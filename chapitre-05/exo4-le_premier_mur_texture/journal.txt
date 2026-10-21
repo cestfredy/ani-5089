@@ -1,0 +1,1 @@
+[2026-10-21 23:31:45.138] [INF] [default] [NkTextureLibrary.cpp:512 in Load] -> [NkTextureLibrary] Texture chargee : murs/mur.png (960x1280 sRGB)
