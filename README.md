@@ -83,6 +83,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 
 | Exercice | Dossier |
 |---|---|
+| exo4 | [`chapitre-06/exo4-les_crochets_de_test`](chapitre-06/exo4-les_crochets_de_test) |
 | exo6 | [`chapitre-06/exo6-le_cone_du_mauvais_ordre`](chapitre-06/exo6-le_cone_du_mauvais_ordre) |
 | exo7 | [`chapitre-06/exo7-le_cout_mesure`](chapitre-06/exo7-le_cout_mesure) |
 | exo9 | [`chapitre-06/exo9-les_deux_images_et_l_image_noire`](chapitre-06/exo9-les_deux_images_et_l_image_noire) |
