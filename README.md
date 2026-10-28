@@ -86,6 +86,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo2 | [`chapitre-06/exo2-la_derive_provoquee`](chapitre-06/exo2-la_derive_provoquee) |
 | exo3 | [`chapitre-06/exo3-accumuler_puis_vider`](chapitre-06/exo3-accumuler_puis_vider) |
 | exo4 | [`chapitre-06/exo4-les_crochets_de_test`](chapitre-06/exo4-les_crochets_de_test) |
+| exo5 | [`chapitre-06/exo5-les_deux_ordres_et_la_matrice`](chapitre-06/exo5-les_deux_ordres_et_la_matrice) |
 | exo6 | [`chapitre-06/exo6-le_cone_du_mauvais_ordre`](chapitre-06/exo6-le_cone_du_mauvais_ordre) |
 | exo7 | [`chapitre-06/exo7-le_cout_mesure`](chapitre-06/exo7-le_cout_mesure) |
 | exo8 | [`chapitre-06/exo8-les_deux_poses_et_l_axe_du_monde`](chapitre-06/exo8-les_deux_poses_et_l_axe_du_monde) |
