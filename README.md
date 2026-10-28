@@ -87,6 +87,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo6 | [`chapitre-06/exo6-le_cone_du_mauvais_ordre`](chapitre-06/exo6-le_cone_du_mauvais_ordre) |
 | exo7 | [`chapitre-06/exo7-le_cout_mesure`](chapitre-06/exo7-le_cout_mesure) |
 | exo9 | [`chapitre-06/exo9-les_deux_images_et_l_image_noire`](chapitre-06/exo9-les_deux_images_et_l_image_noire) |
+| exo10 | [`chapitre-06/exo10-la_projection_a_la_main`](chapitre-06/exo10-la_projection_a_la_main) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
