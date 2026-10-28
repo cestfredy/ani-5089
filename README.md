@@ -79,5 +79,11 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo11 | [`chapitre-05/exo11-le_son_qui_a_une_place`](chapitre-05/exo11-le_son_qui_a_une_place) |
 | exo12 | [`chapitre-05/exo12-les_quatre_attenuations`](chapitre-05/exo12-les_quatre_attenuations) |
 
+## chapitre-06
+
+| Exercice | Dossier |
+|---|---|
+| exo9 | [`chapitre-06/exo9-les_deux_images_et_l_image_noire`](chapitre-06/exo9-les_deux_images_et_l_image_noire) |
+
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
