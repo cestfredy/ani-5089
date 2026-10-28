@@ -88,6 +88,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo4 | [`chapitre-06/exo4-les_crochets_de_test`](chapitre-06/exo4-les_crochets_de_test) |
 | exo6 | [`chapitre-06/exo6-le_cone_du_mauvais_ordre`](chapitre-06/exo6-le_cone_du_mauvais_ordre) |
 | exo7 | [`chapitre-06/exo7-le_cout_mesure`](chapitre-06/exo7-le_cout_mesure) |
+| exo8 | [`chapitre-06/exo8-les_deux_poses_et_l_axe_du_monde`](chapitre-06/exo8-les_deux_poses_et_l_axe_du_monde) |
 | exo9 | [`chapitre-06/exo9-les_deux_images_et_l_image_noire`](chapitre-06/exo9-les_deux_images_et_l_image_noire) |
 | exo10 | [`chapitre-06/exo10-la_projection_a_la_main`](chapitre-06/exo10-la_projection_a_la_main) |
 
