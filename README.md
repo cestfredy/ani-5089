@@ -83,6 +83,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 
 | Exercice | Dossier |
 |---|---|
+| exo3 | [`chapitre-06/exo3-accumuler_puis_vider`](chapitre-06/exo3-accumuler_puis_vider) |
 | exo4 | [`chapitre-06/exo4-les_crochets_de_test`](chapitre-06/exo4-les_crochets_de_test) |
 | exo6 | [`chapitre-06/exo6-le_cone_du_mauvais_ordre`](chapitre-06/exo6-le_cone_du_mauvais_ordre) |
 | exo7 | [`chapitre-06/exo7-le_cout_mesure`](chapitre-06/exo7-le_cout_mesure) |
