@@ -1,0 +1,11 @@
+Ma sensibilité :
+0,002 radian par compte du capteur, soit 0,1146 degré par compte, gardée pour toute la mesure. Le lacet perd brut x 0,002 à chaque image : un brut positif, un geste vers la droite, fait tourner la tête vers la droite, vers les lacets négatifs.
+
+Vitesse de dérive : 6,86 deg/s
+Calculée sur deux lignes éloignées de derive.txt, souris immobile : à t = 5,0 s, lacet = -14,7 deg ; à t = 55,0 s, lacet = -357,7 deg. La tête a tourné de -357,7 - (-14,7) = -343,0 degrés en 50 secondes, soit 6,86 degrés par seconde vers la droite, sans que personne ne touche la souris. En 50 secondes, elle a fait presque un tour complet toute seule.
+
+D'où vient ce chiffre :
+Entre les deux mêmes lignes, le compteur passe de 299 à 3 293 images : 2 994 images en 50 secondes, soit 59,88 images par seconde, la cadence de l'écran. Pendant tout ce temps, la colonne brut vaut 1. Chaque image ajoute donc au lacet 1 compte x 0,002 radian = 0,002 radian = 0,1146 degré. Par seconde : 1 x 0,002 x 59,88 = 0,1198 radian, soit 6,86 degrés par seconde, exactement la vitesse mesurée. Autre façon de le voir : 343,0 degrés / 2 994 images = 0,1146 degré par image, un compte de capteur à chaque image. La vitesse de dérive est donc le dernier brut, multiplié par la sensibilité et par la cadence d'affichage : avec un dernier brut de 3, ou à 90 images par seconde, la tête tournerait trois fois, ou une fois et demie, plus vite.
+
+Pourquoi elle ne s'arrête pas :
+La colonne brut le montre : de t = 4 s à t = 57 s, elle vaut 1 à chaque relevé, alors que la souris ne bouge plus. Ce 1 est le dernier déplacement reçu à la fin de mon geste vers la droite. NkInput.MouseRawDeltaX() ne rend pas le mouvement de l'image, il rend la dernière valeur qu'un événement a écrite dans le module d'entrées, et personne ne la remet à zéro quand plus aucun événement n'arrive. Mon code la relit à chaque image et l'ajoute au lacet : la tête rejoue indéfiniment le dernier compte, 60 fois par seconde. Elle ne s'arrête que lorsqu'un nouvel événement remplace cette valeur : à t = 58 s, en reprenant la souris, brut est passé à -1, puis à 0, et la dérive a changé de sens puis s'est arrêtée. Une souris immobile n'envoie rien, donc rien ne vient jamais effacer le 1 : c'est pourquoi la dérive dure tant que la souris reste immobile.
