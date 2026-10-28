@@ -1,0 +1,103 @@
+from Jenga import *
+import os
+
+NK = os.environ.get("NKENTSEU_ROOT", "C:/tools/Nkentseu").replace("\\", "/")
+
+SOUS_WINDOWS = (os.name == "nt")
+SYSTEME = "Windows" if SOUS_WINDOWS else "Linux"
+EXTENSION = ".lib" if SOUS_WINDOWS else ".a"
+
+AVEC_VULKAN = bool(os.environ.get("VULKAN_SDK", ""))
+
+MODULES = [
+    ("NKRenderer",      "Kernel/Runtime",         "RENDERER"),
+    ("NKRHI",           "Kernel/Runtime",         "RHI"),
+    ("NKSL",            "Kernel/Runtime",         "NKSL"),
+    ("NKGLSlang",       None,                     None),
+    ("NKSPIRVCross",    None,                     None),
+    ("NKGlad",          None,                     None),
+    ("NKAudio",         "Kernel/Runtime",         "AUDIO"),
+    ("NKMedia",         "Kernel/Runtime",         "MEDIA"),
+    ("NKAnima",         "Kernel/Runtime",         "ANIMATION"),
+    ("NKImage",         "Kernel/Runtime",         "IMAGE"),
+    ("NKFont",          "Kernel/Runtime",         "FONT"),
+    ("NKSerialization", "Kernel/System",          "SERIALIZATION"),
+    ("NKReflection",    "Kernel/System",          "REFLECTION"),
+    ("NKWindow",        "Kernel/Runtime",         "WINDOW"),
+    ("NKEvent",         "Kernel/Runtime",         "EVENT"),
+    ("NKStream",        "Kernel/System",          "STREAM"),
+    ("NKFileSystem",    "Kernel/System",          "FILESYSTEM"),
+    ("NKTime",          "Kernel/System",          "TIME"),
+    ("NKLogger",        "Kernel/System",          "LOGGER"),
+    ("NKThreading",     "Kernel/System",          "THREADING"),
+    ("NKMath",          "Kernel/Foundation",      "MATH"),
+    ("NKContainers",    "Kernel/Foundation",      "CONTAINERS"),
+    ("NKMemory",        "Kernel/Foundation",      "MEMORY"),
+    ("NKCore",          "Kernel/Foundation",      "CORE"),
+    ("NKPlatform",      "Kernel/Foundation",      "PLATFORM"),
+]
+
+def LierRessources():
+    import subprocess
+    lien = os.path.join(os.path.dirname(os.getcwd()), "Resources")
+    cible = os.path.join(NK, "Resources")
+    if os.path.exists(lien) or not os.path.isdir(cible):
+        return
+    if SOUS_WINDOWS:
+        subprocess.run(["cmd", "/c", "mklink", "/J", lien, cible.replace("/", "\\")],
+                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    else:
+        os.symlink(cible, lien)
+
+LierRessources()
+
+def bibliotheques(configuration):
+    dossier = f"{NK}/Build/Lib/{configuration}-{SYSTEME}"
+    return [f"{dossier}/{nom}{EXTENSION}" for nom, _, _ in MODULES]
+
+def Projet(nom, source, fenetre=True):
+    with project(nom):
+        if fenetre:
+            windowedapp()
+        else:
+            consoleapp()
+        language("C++")
+        cppdialect("C++17")
+        location(".")
+        files([source])
+
+        objdir("Build/Obj/%{cfg.buildcfg}-%{cfg.system}/%{prj.name}")
+        targetdir("Build/Bin/%{cfg.buildcfg}-%{cfg.system}/%{prj.name}")
+
+        includedirs([f"{NK}/{dossier}/{nom}/src" for nom, dossier, _ in MODULES if dossier]
+                    + [f"{NK}/Externals", f"{NK}/Externals/Libs/NKGlad/include"])
+        defines([f"NKENTSEU_{export}_STATIC_LIB" for _, _, export in MODULES if export]
+                + [f"NKENTSEU_ENABLE_VULKAN_BACKEND={1 if AVEC_VULKAN else 0}"])
+
+        with filter("config:Release"):
+            optimize("Speed")
+            defines(["NDEBUG"])
+
+        for configuration in ["Debug", "Release"]:
+            with filter(f"config:{configuration}"):
+                links(bibliotheques(configuration) * (2 if SOUS_WINDOWS else 1))
+
+        with filter("system:Windows"):
+            defines(["WIN32_LEAN_AND_MEAN", "_UNICODE", "UNICODE",
+                     "NK_RHI_DX11_ENABLED", "NK_RHI_DX12_ENABLED"])
+            links(["user32", "gdi32", "opengl32", "dwmapi", "shell32", "comdlg32",
+                   "d3d11", "d3d12", "dxgi", "dxguid", "d3dcompiler",
+                   "mf", "mfplat", "mfreadwrite", "mfuuid", "uuid", "ole32", "oleaut32",
+                   "dinput8", "winmm", "avrt", "uxtheme", "psapi", "advapi32", "wbemuuid"]
+                  + (["vulkan-1"] if AVEC_VULKAN else []))
+            if AVEC_VULKAN:
+                libdirs([os.environ["VULKAN_SDK"].replace("\\", "/") + "/Lib"])
+            ldflags(["-static", "-static-libgcc", "-static-libstdc++"])
+
+        with filter("system:Linux"):
+            defines(["NKENTSEU_FORCE_WINDOWING_XLIB_ONLY"])
+            links(["pthread", "X11", "Xrandr", "Xext", "GL", "asound", "m", "dl"])
+
+with workspace("MaSalleWks", location="."):
+    configurations(["Debug", "Release"])
+    Projet("MaSalle", "cout.cpp", fenetre=False)
