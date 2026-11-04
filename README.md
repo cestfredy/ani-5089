@@ -98,6 +98,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 
 | Exercice | Dossier |
 |---|---|
+| exo3 | [`chapitre-07/exo3-mesurer_une_vitesse`](chapitre-07/exo3-mesurer_une_vitesse) |
 | exo4 | [`chapitre-07/exo4-le_chemin_long_provoque`](chapitre-07/exo4-le_chemin_long_provoque) |
 | exo5 | [`chapitre-07/exo5-predire_et_comparer`](chapitre-07/exo5-predire_et_comparer) |
 | exo8 | [`chapitre-07/exo8-la_stabilite_mesuree`](chapitre-07/exo8-la_stabilite_mesuree) |
