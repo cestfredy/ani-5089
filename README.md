@@ -98,6 +98,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 
 | Exercice | Dossier |
 |---|---|
+| exo8 | [`chapitre-07/exo8-la_stabilite_mesuree`](chapitre-07/exo8-la_stabilite_mesuree) |
 | exo9 | [`chapitre-07/exo9-le_verrou_de_demi_cadence`](chapitre-07/exo9-le_verrou_de_demi_cadence) |
 
 
