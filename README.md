@@ -103,6 +103,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo3 | [`chapitre-07/exo3-mesurer_une_vitesse`](chapitre-07/exo3-mesurer_une_vitesse) |
 | exo4 | [`chapitre-07/exo4-le_chemin_long_provoque`](chapitre-07/exo4-le_chemin_long_provoque) |
 | exo5 | [`chapitre-07/exo5-predire_et_comparer`](chapitre-07/exo5-predire_et_comparer) |
+| exo6 | [`chapitre-07/exo6-ce_que_la_prediction_vous_apporte`](chapitre-07/exo6-ce_que_la_prediction_vous_apporte) |
 | exo8 | [`chapitre-07/exo8-la_stabilite_mesuree`](chapitre-07/exo8-la_stabilite_mesuree) |
 | exo9 | [`chapitre-07/exo9-le_verrou_de_demi_cadence`](chapitre-07/exo9-le_verrou_de_demi_cadence) |
 
