@@ -107,6 +107,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo7 | [`chapitre-07/exo7-la_latence_injectee_et_la_borne`](chapitre-07/exo7-la_latence_injectee_et_la_borne) |
 | exo8 | [`chapitre-07/exo8-la_stabilite_mesuree`](chapitre-07/exo8-la_stabilite_mesuree) |
 | exo9 | [`chapitre-07/exo9-le_verrou_de_demi_cadence`](chapitre-07/exo9-le_verrou_de_demi_cadence) |
+| exo10 | [`chapitre-07/exo10-un_meilleur_modele`](chapitre-07/exo10-un_meilleur_modele) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
