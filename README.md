@@ -94,5 +94,11 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo9 | [`chapitre-06/exo9-les_deux_images_et_l_image_noire`](chapitre-06/exo9-les_deux_images_et_l_image_noire) |
 | exo10 | [`chapitre-06/exo10-la_projection_a_la_main`](chapitre-06/exo10-la_projection_a_la_main) |
 
+## chapitre-07
+
+| Exercice | Dossier |
+|---|---|
+| exo9 | [`chapitre-07/exo9-le_verrou_de_demi_cadence`](chapitre-07/exo9-le_verrou_de_demi_cadence) |
+
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
