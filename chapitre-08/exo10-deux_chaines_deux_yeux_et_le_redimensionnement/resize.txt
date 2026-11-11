@@ -1,0 +1,11 @@
+fenetre redimensionnee en 960x540, attente du GPU
+detruit la chaine, oeil gauche
+detruit les images, oeil gauche
+cree 2 images de 480x540, oeil gauche
+cree la chaine, oeil gauche
+enregistre les poignees 14 et 16, oeil gauche
+detruit la chaine, oeil droit
+detruit les images, oeil droit
+cree 2 images de 480x540, oeil droit
+cree la chaine, oeil droit
+enregistre les poignees 18 et 20, oeil droit

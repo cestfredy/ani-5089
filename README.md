@@ -109,5 +109,11 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo9 | [`chapitre-07/exo9-le_verrou_de_demi_cadence`](chapitre-07/exo9-le_verrou_de_demi_cadence) |
 | exo10 | [`chapitre-07/exo10-un_meilleur_modele`](chapitre-07/exo10-un_meilleur_modele) |
 
+## chapitre-08
+
+| Exercice | Dossier |
+|---|---|
+| exo10 | [`chapitre-08/exo10-deux_chaines_deux_yeux_et_le_redimensionnement`](chapitre-08/exo10-deux_chaines_deux_yeux_et_le_redimensionnement) |
+
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
