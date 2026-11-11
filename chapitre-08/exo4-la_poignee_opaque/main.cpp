@@ -1,33 +1,33 @@
 #include <cstdint>
 #include <iostream>
+#include <map>
 #include <string>
-#include <vector>
 
 struct Anneau {
-    std::vector<std::uint64_t> valeurs;
-    std::vector<bool> posees;
-    long long nombrePosees = 0;
-
-    explicit Anneau(long long images) {
-        if (images > 0) {
-            valeurs.assign((size_t)images, 0u);
-            posees.assign((size_t)images, false);
-        }
-    }
+    long long images = 0;
+    std::map<long long, std::uint64_t> valeurs;
 
     bool Dedans(long long index) const {
-        return index >= 0 && index < (long long)valeurs.size();
+        return index >= 0 && index < images;
     }
 
     bool Poser(long long index, std::uint64_t valeur) {
         if (!Dedans(index)) {
             return false;
         }
-        if (!posees[(size_t)index]) {
-            posees[(size_t)index] = true;
-            ++nombrePosees;
+        valeurs[index] = valeur;
+        return true;
+    }
+
+    bool Lire(long long index, std::uint64_t& valeur) const {
+        if (!Dedans(index)) {
+            return false;
         }
-        valeurs[(size_t)index] = valeur;
+        auto trouvee = valeurs.find(index);
+        if (trouvee == valeurs.end()) {
+            return false;
+        }
+        valeur = trouvee->second;
         return true;
     }
 };
@@ -40,7 +40,8 @@ int main() {
     if (!(std::cin >> images >> n)) {
         return 0;
     }
-    Anneau anneau(images);
+    Anneau anneau;
+    anneau.images = images;
     for (int i = 0; i < n; ++i) {
         std::string commande;
         long long index = 0;
@@ -57,13 +58,13 @@ int main() {
             }
             continue;
         }
-        bool lisible = anneau.Dedans(index) && anneau.posees[(size_t)index];
-        if (lisible) {
-            std::cout << anneau.valeurs[(size_t)index] << '\n';
+        std::uint64_t valeur = 0;
+        if (anneau.Lire(index, valeur)) {
+            std::cout << valeur << '\n';
         } else {
             std::cout << "VIDE\n";
         }
     }
-    std::cout << "POSEES " << anneau.nombrePosees << '\n';
+    std::cout << "POSEES " << anneau.valeurs.size() << '\n';
     return 0;
 }

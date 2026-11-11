@@ -46,11 +46,12 @@ static const char* Verdict(const Programme& p) {
 int main() {
     std::ios::sync_with_stdio(false);
     std::cin.tie(nullptr);
-    std::string ligne;
-    if (!std::getline(std::cin, ligne)) {
+    int n = 0;
+    if (!(std::cin >> n)) {
         return 0;
     }
-    int n = std::stoi(ligne);
+    std::string ligne;
+    std::getline(std::cin, ligne);
     int survivants = 0;
     int lus = 0;
     while (lus < n && std::getline(std::cin, ligne)) {
