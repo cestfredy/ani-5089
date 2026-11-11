@@ -113,6 +113,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 
 | Exercice | Dossier |
 |---|---|
+| exo7 | [`chapitre-08/exo7-deux_chaines_deux_yeux`](chapitre-08/exo7-deux_chaines_deux_yeux) |
 | exo8 | [`chapitre-08/exo8-le_banc_avant_le_rendu`](chapitre-08/exo8-le_banc_avant_le_rendu) |
 | exo9 | [`chapitre-08/exo9-le_figement_provoque_puis_leve`](chapitre-08/exo9-le_figement_provoque_puis_leve) |
 | exo10 | [`chapitre-08/exo10-deux_chaines_deux_yeux_et_le_redimensionnement`](chapitre-08/exo10-deux_chaines_deux_yeux_et_le_redimensionnement) |
