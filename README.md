@@ -113,6 +113,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 
 | Exercice | Dossier |
 |---|---|
+| exo5 | [`chapitre-08/exo5-les_deux_lignes_et_pas_une`](chapitre-08/exo5-les_deux_lignes_et_pas_une) |
 | exo6 | [`chapitre-08/exo6-ce_qu_il_faut_refaire_quand_la_fenetre_change`](chapitre-08/exo6-ce_qu_il_faut_refaire_quand_la_fenetre_change) |
 | exo7 | [`chapitre-08/exo7-deux_chaines_deux_yeux`](chapitre-08/exo7-deux_chaines_deux_yeux) |
 | exo8 | [`chapitre-08/exo8-le_banc_avant_le_rendu`](chapitre-08/exo8-le_banc_avant_le_rendu) |
