@@ -1,0 +1,15 @@
+creer une chaine de 3 images                   OK
+tour 1 : empruntee 0, rendue oui, soumise 0 (poignee 1000)
+tour 2 : empruntee 1, rendue oui, soumise 1 (poignee 1001)
+tour 3 : empruntee 2, rendue oui, soumise 2 (poignee 1002)
+tour 4 : empruntee 0, rendue oui, soumise 0 (poignee 1000)
+tour 5 : empruntee 1, rendue oui, soumise 1 (poignee 1001)
+tour 6 : empruntee 2, rendue oui, soumise 2 (poignee 1002)
+bouclage : le tour 4 reprend l'image 0, comme le tour 1
+premier emprunt                                OK
+refus : emprunter deux fois de suite           OK
+rendre l'image empruntee                       OK
+refus : rendre sans avoir emprunte             OK
+refus : creer une chaine de 5 images (max 4)   OK
+refus : creer une chaine de 0 image            OK
+BANC REUSSI (0 echec(s))
