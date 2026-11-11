@@ -1,0 +1,20 @@
+gdb -p 13788 -batch -ex "info threads" -ex "thread apply all bt 25", DX11, MASALLE_UN_APPEL=1, programme attache apres 10 s, image 850 environ
+fil principal :
+Thread 1 (Thread 13788.0x20c):
+#0  0x00007ffba1ef64e4 in ntdll!ZwWriteFile () from C:\WINDOWS\SYSTEM32\ntdll.dll
+#1  0x00007ffb9f0a454d in WriteFile () from C:\WINDOWS\System32\KernelBase.dll
+#2  0x00007ffb9f90d517 in ucrtbase!_get_osfhandle () from C:\WINDOWS\System32\ucrtbase.dll
+#3  0x00007ffb9f90c7b5 in ucrtbase!_fflush_nolock () from C:\WINDOWS\System32\ucrtbase.dll
+#4  0x00007ffb9f90c3be in ucrtbase!_fflush_nolock () from C:\WINDOWS\System32\ucrtbase.dll
+#5  0x00007ffb9f90bf75 in ucrtbase!fwrite () from C:\WINDOWS\System32\ucrtbase.dll
+#6  0x00007ffb9f90be20 in ucrtbase!fwrite () from C:\WINDOWS\System32\ucrtbase.dll
+#7  0x00007ffb9f90da6b in ucrtbase!fputc () from C:\WINDOWS\System32\ucrtbase.dll
+#8  0x00007ffb9f90d972 in ucrtbase!fputc () from C:\WINDOWS\System32\ucrtbase.dll
+#9  0x00007ff78977f4a8 in __mingw_pformat ()
+#10 0x00007ff78977ffdb in __mingw_printf ()
+#11 0x00007ff7890e2601 in nkmain () at C:\Users\...\ani-5089\chapitre-08\exo9-le_figement_provoque_puis_leve/cible.cpp:292
+#12 0x00007ff7890e17e6 in WinMain (hInstance=0x7ff7890e0000, hPrevInstance=0x0, lpCmdLine=0x1c72e12af08 "", nCmdShow=1) at C:\tools\Nkentseu\Kernel\Runtime\NKWindow\src/NKWindow/EntryPoints/NkWindowsDesktop.h:84
+#13 0x00007ff7890e1157 in __tmainCRTStartup ()
+#14 0x00007ffba0bedda7 in KERNEL32!BaseThreadInitThunk () from C:\WINDOWS\System32\kernel32.dll
+#15 0x00007ffba1e59c5c in ntdll!RtlUserThreadStart () from C:\WINDOWS\SYSTEM32\ntdll.dll
+#16 0x0000000000000000 in ?? ()

@@ -113,6 +113,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 
 | Exercice | Dossier |
 |---|---|
+| exo9 | [`chapitre-08/exo9-le_figement_provoque_puis_leve`](chapitre-08/exo9-le_figement_provoque_puis_leve) |
 | exo10 | [`chapitre-08/exo10-deux_chaines_deux_yeux_et_le_redimensionnement`](chapitre-08/exo10-deux_chaines_deux_yeux_et_le_redimensionnement) |
 
 
