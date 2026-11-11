@@ -113,6 +113,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 
 | Exercice | Dossier |
 |---|---|
+| exo2 | [`chapitre-08/exo2-les_quatre_temps_dans_cet_ordre`](chapitre-08/exo2-les_quatre_temps_dans_cet_ordre) |
 | exo3 | [`chapitre-08/exo3-les_images_en_vol`](chapitre-08/exo3-les_images_en_vol) |
 | exo4 | [`chapitre-08/exo4-la_poignee_opaque`](chapitre-08/exo4-la_poignee_opaque) |
 | exo5 | [`chapitre-08/exo5-les_deux_lignes_et_pas_une`](chapitre-08/exo5-les_deux_lignes_et_pas_une) |
