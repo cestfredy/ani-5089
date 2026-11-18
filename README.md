@@ -137,6 +137,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo7 | [`chapitre-09/exo7-cinq_types_et_un_qui_va_dans_l_autre_sens`](chapitre-09/exo7-cinq_types_et_un_qui_va_dans_l_autre_sens) |
 | exo8 | [`chapitre-09/exo8-le_banc_des_trois_champs`](chapitre-09/exo8-le_banc_des_trois_champs) |
 | exo9 | [`chapitre-09/exo9-tenir_un_objet_et_le_laisser_tomber`](chapitre-09/exo9-tenir_un_objet_et_le_laisser_tomber) |
+| exo10 | [`chapitre-09/exo10-la_manette_qui_s_eteint`](chapitre-09/exo10-la_manette_qui_s_eteint) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
