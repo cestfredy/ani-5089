@@ -1,0 +1,8 @@
+Ce qui se passe sur le front :
+Le doigt se pose sur le grip à l'image 20 et y reste jusqu'à l'image 90. À l'image 20, current et changed valent 1 ensemble : c'est le front d'appui, et le cube, à portée (moins de 35 cm), est attaché à la pose de paume de la main droite : il saute dans la main et se cale sous la perle qui marque la paume, son centre à 6 cm sous elle. Dès l'image 21, changed retombe à 0 alors que current reste à 1 : la version fautive, qui ne tient l'objet que sur le front, ne le met plus à la main. Le cube est libre, il tombe pendant que la main remonte : 0,990 m à l'image 20, 0,949 m à l'image 25, 0,840 m à l'image 30, posé sur la table (0,800 m) dès l'image 35. front.png est prise à l'image 28 : le cube est en l'air, en train de tomber, nettement sous la paume.
+
+Ce qui se passe sur le niveau :
+La version juste saisit sur le front, puis tient tant que current vaut 1 : à chaque image, la pose du cube est la pose de paume multipliée par le décalage fixé à la saisie. Le cube suit la main, monte avec elle (1,028 m à l'image 25, 1,065 m à l'image 30, 1,253 m à l'image 55) et tourne avec elle, sans jamais décoller de la paume. niveau.png est prise au même instant, à l'image 28 : le cube est sous la perle de la main, tenu. L'objet est attaché à la paume (GRIP_POSE), pas à la visée : il ne flotte pas à quelques centimètres devant la main.
+
+Ce que je teste pour lacher :
+!current && changed : current vient de passer à faux, c'est le front de relâchement. Je lâche une seule fois, à cette image-là. Pas changed seul, qui vaut aussi 1 à l'appui, et pas !current seul, qui est vrai à toutes les images où rien n'est tenu, et aussi quand la manette s'éteint (exercice suivant).

@@ -136,6 +136,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo6 | [`chapitre-09/exo6-la_paume_et_la_visee`](chapitre-09/exo6-la_paume_et_la_visee) |
 | exo7 | [`chapitre-09/exo7-cinq_types_et_un_qui_va_dans_l_autre_sens`](chapitre-09/exo7-cinq_types_et_un_qui_va_dans_l_autre_sens) |
 | exo8 | [`chapitre-09/exo8-le_banc_des_trois_champs`](chapitre-09/exo8-le_banc_des_trois_champs) |
+| exo9 | [`chapitre-09/exo9-tenir_un_objet_et_le_laisser_tomber`](chapitre-09/exo9-tenir_un_objet_et_le_laisser_tomber) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
