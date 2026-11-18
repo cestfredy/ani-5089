@@ -124,5 +124,18 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo9 | [`chapitre-08/exo9-le_figement_provoque_puis_leve`](chapitre-08/exo9-le_figement_provoque_puis_leve) |
 | exo10 | [`chapitre-08/exo10-deux_chaines_deux_yeux_et_le_redimensionnement`](chapitre-08/exo10-deux_chaines_deux_yeux_et_le_redimensionnement) |
 
+## chapitre-09
+
+| Exercice | Dossier |
+|---|---|
+| exo1 | [`chapitre-09/exo1-le_front_le_niveau_et_les_trois_champs`](chapitre-09/exo1-le_front_le_niveau_et_les_trois_champs) |
+| exo2 | [`chapitre-09/exo2-tirer_tenir_et_l_objet_qui_tremble`](chapitre-09/exo2-tirer_tenir_et_l_objet_qui_tremble) |
+| exo3 | [`chapitre-09/exo3-l_action_que_personne_n_a_liee`](chapitre-09/exo3-l_action_que_personne_n_a_liee) |
+| exo4 | [`chapitre-09/exo4-la_droite_agit_la_gauche_deplace`](chapitre-09/exo4-la_droite_agit_la_gauche_deplace) |
+| exo5 | [`chapitre-09/exo5-la_zone_morte_du_manche`](chapitre-09/exo5-la_zone_morte_du_manche) |
+| exo6 | [`chapitre-09/exo6-la_paume_et_la_visee`](chapitre-09/exo6-la_paume_et_la_visee) |
+| exo7 | [`chapitre-09/exo7-cinq_types_et_un_qui_va_dans_l_autre_sens`](chapitre-09/exo7-cinq_types_et_un_qui_va_dans_l_autre_sens) |
+| exo8 | [`chapitre-09/exo8-le_banc_des_trois_champs`](chapitre-09/exo8-le_banc_des_trois_champs) |
+
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.

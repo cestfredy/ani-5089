@@ -1,0 +1,8 @@
+# action inactive : avancer (MOVE)
+image | saisir: courant change actif | menu: courant change actif | avancer: courant change actif
+    1 |       0       0     1 |       0       0     1 |       0       0     0
+    2 |       1       1     1 |       0       0     1 |       0       0     0   <- saisie (front)
+    3 |       1       0     1 |       0       0     1 |       0       0     0
+    4 |       1       0     1 |       0       0     1 |       0       0     0
+    5 |       0       1     1 |       0       0     1 |       0       0     0   <- lacher (front)
+    6 |       0       0     1 |       0       0     1 |       0       0     0
