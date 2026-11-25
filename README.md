@@ -149,6 +149,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo4 | [`chapitre-10/exo4-les_six_symptomes_et_ce_qu_aucun_ne_dit`](chapitre-10/exo4-les_six_symptomes_et_ce_qu_aucun_ne_dit) |
 | exo5 | [`chapitre-10/exo5-la_couche_que_le_simulateur_refuse_en_silence`](chapitre-10/exo5-la_couche_que_le_simulateur_refuse_en_silence) |
 | exo6 | [`chapitre-10/exo6-enterre_ou_en_levitation`](chapitre-10/exo6-enterre_ou_en_levitation) |
+| exo7 | [`chapitre-10/exo7-ce_que_la_couche_quad_fait_gagner_au_texte`](chapitre-10/exo7-ce_que_la_couche_quad_fait_gagner_au_texte) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
