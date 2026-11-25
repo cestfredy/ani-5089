@@ -150,6 +150,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo5 | [`chapitre-10/exo5-la_couche_que_le_simulateur_refuse_en_silence`](chapitre-10/exo5-la_couche_que_le_simulateur_refuse_en_silence) |
 | exo6 | [`chapitre-10/exo6-enterre_ou_en_levitation`](chapitre-10/exo6-enterre_ou_en_levitation) |
 | exo7 | [`chapitre-10/exo7-ce_que_la_couche_quad_fait_gagner_au_texte`](chapitre-10/exo7-ce_que_la_couche_quad_fait_gagner_au_texte) |
+| exo8 | [`chapitre-10/exo8-le_banc_des_six_trames`](chapitre-10/exo8-le_banc_des_six_trames) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.

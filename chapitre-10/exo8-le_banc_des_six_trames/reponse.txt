@@ -1,0 +1,15 @@
+Pourquoi la trame 5 reprend sur l'image 2 :
+L'index de l'anneau n'avance que quand on emprunte une image, c'est-a-dire quand on dessine. Les trames
+1 et 2 ont emprunte puis relache les images 0 et 1 : l'index vaut 2. Aux trames 3 et 4, le casque est
+pose, on ne dessine rien, on n'acquiert rien, donc on ne relache rien : l'index reste a 2. La trame 5
+reprend donc sur l'image 2, et non sur l'image 4 : les trames sautees n'ont rien emprunte, donc rien
+rendu. La trame 6 revient a l'image 0, puisque l'anneau n'a que trois images. Si l'index valait 4 a la
+trame 5, c'est qu'on l'aurait avance sans dessiner.
+
+Pourquoi on finit une trame sans rien dessiner :
+Parce qu'une trame commencee doit etre terminee. Le systeme compte les trames : il attend une fin pour
+chaque debut, et il regle son rythme dessus. Aux trames 3 et 4, la fin de trame est soumise quand meme,
+avec zero couche (la colonne des couches soumises vaut 0, celle des fins ne se vide jamais). Si on la
+sautait, la trame resterait ouverte et l'attente de la trame suivante ne rendrait jamais la main : le
+programme se figerait quand on pose le casque et ne reprendrait pas quand on le remet. C'est pour cela
+que l'appel est en dehors du if du rendu dans banc.cpp.

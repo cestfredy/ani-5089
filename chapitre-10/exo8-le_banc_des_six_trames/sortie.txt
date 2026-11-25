@@ -1,0 +1,7 @@
+image  on rend  couches soumises  index d'image  lacet du rendu  fin de trame
+    1      oui                 1              0             1.0  appelee
+    2      oui                 1              1             2.0  appelee
+    3      non                 0              -               -  appelee
+    4      non                 0              -               -  appelee
+    5      oui                 1              2             5.0  appelee
+    6      oui                 1              0             6.0  appelee
