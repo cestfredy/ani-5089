@@ -139,5 +139,11 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo9 | [`chapitre-09/exo9-tenir_un_objet_et_le_laisser_tomber`](chapitre-09/exo9-tenir_un_objet_et_le_laisser_tomber) |
 | exo10 | [`chapitre-09/exo10-la_manette_qui_s_eteint`](chapitre-09/exo10-la_manette_qui_s_eteint) |
 
+## chapitre-10
+
+| Exercice | Dossier |
+|---|---|
+| exo1 | [`chapitre-10/exo1-ce_que_la_reprojection_corrige_vraiment`](chapitre-10/exo1-ce_que_la_reprojection_corrige_vraiment) |
+
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
