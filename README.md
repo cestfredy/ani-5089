@@ -152,6 +152,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo7 | [`chapitre-10/exo7-ce_que_la_couche_quad_fait_gagner_au_texte`](chapitre-10/exo7-ce_que_la_couche_quad_fait_gagner_au_texte) |
 | exo8 | [`chapitre-10/exo8-le_banc_des_six_trames`](chapitre-10/exo8-le_banc_des_six_trames) |
 | exo9 | [`chapitre-10/exo9-la_pose_du_rendu_contre_la_pose_fraiche`](chapitre-10/exo9-la_pose_du_rendu_contre_la_pose_fraiche) |
+| exo10 | [`chapitre-10/exo10-la_boucle_qui_ne_reprend_jamais`](chapitre-10/exo10-la_boucle_qui_ne_reprend_jamais) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
