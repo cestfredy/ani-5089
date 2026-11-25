@@ -146,6 +146,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | exo1 | [`chapitre-10/exo1-ce_que_la_reprojection_corrige_vraiment`](chapitre-10/exo1-ce_que_la_reprojection_corrige_vraiment) |
 | exo2 | [`chapitre-10/exo2-une_trame_commencee_doit_etre_terminee`](chapitre-10/exo2-une_trame_commencee_doit_etre_terminee) |
 | exo3 | [`chapitre-10/exo3-l_anneau_n_avance_que_quand_on_dessine`](chapitre-10/exo3-l_anneau_n_avance_que_quand_on_dessine) |
+| exo4 | [`chapitre-10/exo4-les_six_symptomes_et_ce_qu_aucun_ne_dit`](chapitre-10/exo4-les_six_symptomes_et_ce_qu_aucun_ne_dit) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
