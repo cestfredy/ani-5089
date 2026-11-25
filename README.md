@@ -144,6 +144,7 @@ Ici, j'ai fait dossier par exercice, au chemin exact demandé pour chacun.
 | Exercice | Dossier |
 |---|---|
 | exo1 | [`chapitre-10/exo1-ce_que_la_reprojection_corrige_vraiment`](chapitre-10/exo1-ce_que_la_reprojection_corrige_vraiment) |
+| exo2 | [`chapitre-10/exo2-une_trame_commencee_doit_etre_terminee`](chapitre-10/exo2-une_trame_commencee_doit_etre_terminee) |
 
 
 Compilateur : g++ (MSYS2 UCRT64), C++17.
